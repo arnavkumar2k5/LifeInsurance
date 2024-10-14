@@ -16,13 +16,13 @@ function Home() {
   return (
     <div className="flex flex-col">
       <div
-        className="flex flex-col md:flex-row justify-center items-center mt-20 md:mt-36 m-auto md:w-[63%] gap-20 mb-40"
+        className="flex flex-col md:flex-row justify-center items-center m-auto md:pl-56 md:pr-52 pt-24 mb-40"
         id="/"
       >
-        <div className="w-screen md:w-[60%]">
+        <div >
           <Info />
         </div>
-        <div className="md:w-[40%]">
+        <div >
           <Form />
         </div>
       </div>

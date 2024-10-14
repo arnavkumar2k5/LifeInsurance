@@ -37,17 +37,21 @@ function Component8() {
     },
     {
       heading: "How to Cancel my Life Insurance Policy",
-      para: "Canceling a life insurance policy is not complicated. However, the exact steps vary depending on whether you have a term life policy ora cash-value life policy.You can cancel a term life policy in different ways. Whichever option you pick, make sure you cancel any automatic payments that you have arranged with your bank.",
-    },
+      para: "Canceling a life insurance policy is not complicated. However, the exact steps vary depending on whether you have a term life policy or a cash-value life policy. You can cancel a term life policy in different ways. Whichever option you pick, make sure you cancel any automatic payments that you have arranged with your bank.",
+      point1: "• Submit a cancellation form.",
+      point2:  "• Write a letter.",
+      point3:  "• Call your provider.",
+      point4:  "• Stop paying premiums: Canceling a term life plan can be as easy as stopping the premium payments. If you do not make a premium payment within the grace period, your policy lapses automatically. A grace period is a small window you get after the due date in which you can pay the premium without coverage lapsing."
+    }
   ];
 
   return (
-    <div className="flex pt-40 m-auto w-[70%] pb-40">
-      <div className="text-xl flex flex-col gap-5 pt-10">
-        <div className="text-4xl font-bold w-[45rem]">
+    <div className="flex flex-col p-5 md:flex-row justify-center md:pt-40 m-auto md:pb-40 md:p-40">
+      <div className="text-sm flex flex-col gap-5 md:pt-10">
+        <div className="text-lg md:text-3xl font-semibold md:w-[45rem]">
           Frequently asked questions
         </div>
-        <p className=" w-[32rem]">
+        <p className=" md:w-[28rem]">
           When you need help with insurance and claims, it's at the ready 24/7
         </p>
         <p className="font-semibold">
@@ -57,11 +61,26 @@ function Component8() {
       <div>
         {items.map((item) => (
           <div className="flex flex-col gap-5">
-            <p className="text-xl font-semibold ml-5 w-[55%] mt-10">
+            <div className="flex justify-between items-center">
+            <p className="text-sm font-semibold md:ml-5 mt-10">
               {item.heading}
             </p>
-            <div className="bg-[#F5F5F5] w-[90%] text-xl p-5 rounded-2xl">
+            <p>^</p>
+            </div>
+            <div className="bg-[#F5F5F5] text-sm p-5 rounded-2xl">
               {item.para}
+              <div>
+              {item.point1}
+              </div>
+              <div>
+              {item.point2}
+              </div>
+              <div>
+              {item.point3}
+              </div>
+              <div>
+              {item.point4}
+              </div>
             </div>
           </div>
         ))}

@@ -3,13 +3,18 @@ import React from "react";
 function Component6() {
   return (
     <div>
-      <div className="w-[90%] m-auto flex flex-col gap-48 mt-40">
-        <div className="flex justify-center gap-28 items-center">
+      <div className="m-auto flex flex-col justify-center items-center p-5 md:p-40">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10 md:gap-20">
           <div>
-            <img src="women.png" alt="family" className="h-[60vh]" />
+            <img
+              src="women.png"
+              alt="family"
+              className="h-[40vh] md:h-[65vh] object-cover"
+            />
           </div>
-          <div className="w-[34%] flex flex-col gap-5 text-2xl">
-            <div className="text-5xl font-semibold mb-10">
+
+          <div className="flex flex-col gap-5 text-sm md:text-lg w-full md:w-[45%]">
+            <div className="text-xl md:text-3xl font-semibold mb-5 md:mb-10">
               How much do insurance cover costs?
             </div>
             <div>
@@ -21,11 +26,10 @@ function Component6() {
                 <span className="font-semibold">Age:</span> Generally, insurance
                 is less expensive when you're younger.
               </div>
-              <ul className="list-disc pl-8">
+              <ul className="list-disc pl-5 md:pl-8">
                 <li>
-                  {" "}
                   <span className="font-semibold">Health: </span>Family history,
-                  chronic diseases and lifestyle can increase costs.
+                  chronic diseases, and lifestyle can increase costs.
                 </li>
                 <li>
                   <span className="font-semibold">Gender:</span> Women live
@@ -37,7 +41,8 @@ function Component6() {
                 </li>
               </ul>
             </div>
-            <div className="pl-10 pr-10 p-3 rounded-2xl bg-cyan-400 w-1/3">
+
+            <div className="rounded-lg bg-cyan-400 text-white p-3 text-center w-[50%] md:w-[30%]">
               Get a Quote
             </div>
           </div>

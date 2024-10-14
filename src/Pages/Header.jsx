@@ -76,12 +76,12 @@ function Header() {
           </button>
         </div>
         <div className="md:w-1/3  md:flex justify-center md:pl-[7rem]">
-          <img src="logo.png" alt="logo" className="h-10 md:h-16" />
+          <img src="logo.png" alt="logo" className="h-10 md:h-[3rem]" />
         </div>
         <div className="md:w-2/3 flex justify-center items-center md:pr-28 gap-5">
-          <ul className="flex gap-10 items-center text-xl">
+          <ul className="flex gap-10 items-center text-sm">
             {navItems.map((item) => (
-              <li className="text-lg relative hidden md:flex" key={item.name}>
+              <li className="text-sm relative hidden md:flex" key={item.name}>
                 <a
                   href={item.navPage}
                   className={`cursor-pointer ${
@@ -98,7 +98,7 @@ function Header() {
                 </a>
                 {selectedHeading === item.name &&
                   item.name !== "Get a Quote" && (
-                    <div className="absolute h-[3px] bg-blue-500 w-full bottom-[-27px] left-0"></div>
+                    <div className="absolute h-[3px] bg-blue-500 w-full bottom-[-23px] left-0"></div>
                   )}
 
                 {item.subMenu && dropdowns[item.name.toLowerCase()] && (
